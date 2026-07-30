@@ -47,9 +47,15 @@ export async function POST(req: Request) {
 
   try {
     await insertLead(lead);
-  } catch {
+  } catch (e) {
+    console.error("onboarding insert failed:", e);
     return NextResponse.json(
-      { ok: false, error: "Não foi possível salvar. Tente novamente em instantes." },
+      {
+        ok: false,
+        error: "Não foi possível salvar. Tente novamente em instantes.",
+        // TEMPORÁRIO (preview): detalhe do erro para diagnóstico. Remover antes da produção.
+        detail: e instanceof Error ? e.message : String(e),
+      },
       { status: 500 }
     );
   }

@@ -1,7 +1,12 @@
 // Helpers de servidor para gravar/ler leads do onboarding via Supabase REST.
 // Usa apenas a service_role key (secreta) — nunca exponha no cliente.
 
-const SUPABASE_URL = process.env.SUPABASE_URL;
+// Normaliza a URL: remove barra final e um eventual sufixo /rest/v1
+// (caso tenham colado a URL da "API de dados" em vez da URL base).
+const RAW_URL = process.env.SUPABASE_URL;
+const SUPABASE_URL = RAW_URL
+  ? RAW_URL.trim().replace(/\/+$/, "").replace(/\/rest\/v1$/, "")
+  : RAW_URL;
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const TABLE = "onboarding_leads";
 
