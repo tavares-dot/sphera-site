@@ -21,7 +21,7 @@ export const site = {
   formAccessKey: "",
   tagline: "Organização que sai do papel e vira rotina.",
   seo: {
-    title: "SPHERA — Organização e Gestão para Pequenas e Médias Empresas",
+    title: "SPHERA · Organização e Gestão para Pequenas e Médias Empresas",
     description:
       "A SPHERA entra junto com pequenas e médias empresas para organizar a gestão e o comercial e colocar tudo pra funcionar na prática. Menos relatório, mais coisa acontecendo.",
   },
@@ -48,7 +48,7 @@ export const nav = [
 export const hero = {
   eyebrow: "Organização e execução para pequenas e médias empresas",
   description:
-    "Você não precisa de mais um relatório. A SPHERA entra junto com o seu time para organizar a gestão e o comercial e colocar tudo pra funcionar — na prática, no dia a dia da sua empresa, até virar rotina.",
+    "Você não precisa de mais um relatório. A SPHERA entra junto com o seu time para organizar a gestão e o comercial e colocar tudo pra funcionar na prática, no dia a dia da sua empresa, até virar rotina.",
   primaryCta: "Solicitar Diagnóstico",
   secondaryCta: "Ver como funciona",
   meta: [
@@ -61,14 +61,14 @@ export const hero = {
 export const manifesto = {
   lead: "Empresa não muda com relatório.",
   emphasis: "Muda quando alguém põe a mão junto.",
-  body: "Você já sabe boa parte do que precisa melhorar. O que falta é tempo e gente para fazer acontecer no meio da correria. A SPHERA entra junto com o seu time, organiza o que está bagunçado e executa a mudança no dia a dia — até virar rotina, não mais uma ideia parada na gaveta.",
+  body: "Você já sabe boa parte do que precisa melhorar. O que falta é tempo e gente para fazer acontecer no meio da correria. A SPHERA entra junto com o seu time, organiza o que está bagunçado e executa a mudança no dia a dia. Até virar rotina, não mais uma ideia parada na gaveta.",
 };
 
 export const problems = {
   eyebrow: "Diagnóstico",
-  title: "Sua empresa está crescendo — ou apenas trabalhando mais?",
+  title: "Sua empresa está crescendo ou apenas trabalhando mais?",
   intro:
-    "Quase todo negócio que cresce rápido chega no mesmo ponto: mais clientes, mais gente, mais tarefas — e a sensação de que tudo depende de você. Não é falta de esforço. É que a empresa cresceu mais rápido do que a forma de organizá-la.",
+    "Quase todo negócio que cresce rápido chega no mesmo ponto: mais clientes, mais gente, mais tarefas, e a sensação de que tudo depende de você. Não é falta de esforço. É que a empresa cresceu mais rápido do que a forma de organizá-la.",
   items: [
     {
       title: "Tudo depende do dono",
@@ -78,7 +78,7 @@ export const problems = {
     {
       title: "Cada um trabalha de um jeito",
       description:
-        "Sem uma forma combinada de trabalhar, cada pessoa faz do seu jeito — e o que dá certo com um não se repete com o resto.",
+        "Sem uma forma combinada de trabalhar, cada pessoa faz do seu jeito, e o que dá certo com um não se repete com o resto.",
     },
     {
       title: "Informação espalhada",
@@ -107,7 +107,7 @@ export const methodology = {
   eyebrow: "Como a gente trabalha",
   title: "A Metodologia SPHERA",
   intro:
-    "Organizar uma empresa não precisa virar um projeto complicado — e você não faz sozinho. São seis passos simples que a gente percorre junto com o seu time, botando a mão, até o negócio rodar sem depender só de você.",
+    "Organizar uma empresa não precisa virar um projeto complicado, e você não faz isso sozinho. São seis passos simples que a gente percorre junto com o seu time, botando a mão, até o negócio rodar sem depender só de você.",
   stages: [
     {
       n: "01",
@@ -123,7 +123,7 @@ export const methodology = {
       key: "PLANEJAR",
       title: "Desenhar um jeito melhor de trabalhar",
       description:
-        "Definimos, junto com você, como a empresa deveria funcionar para o tamanho que ela tem hoje — e para onde quer chegar.",
+        "Definimos, junto com você, como a empresa deveria funcionar para o tamanho que ela tem hoje e para onde quer chegar.",
       benefit: "Um plano prático, no tamanho da sua empresa.",
       icon: "DraftingCompass",
     },
@@ -141,7 +141,7 @@ export const methodology = {
       key: "EXECUTAR",
       title: "Colocar pra funcionar",
       description:
-        "As combinações saem do papel e viram rotina do dia a dia, com ferramentas simples — do jeito que a sua equipe consegue usar.",
+        "As combinações saem do papel e viram rotina do dia a dia, com ferramentas simples, do jeito que a sua equipe consegue usar.",
       benefit: "A mudança acontece na prática, não fica no papel.",
       icon: "Settings2",
     },
@@ -178,7 +178,7 @@ export const services = {
       problem:
         "Você sente que a empresa poderia render mais, mas não sabe dizer exatamente onde ela perde tempo e dinheiro.",
       structure:
-        "Olhamos o negócio por dentro — vendas, rotina e equipe — e mostramos onde estão os gargalos e as maiores oportunidades.",
+        "Olhamos o negócio por dentro (vendas, rotina e equipe) e mostramos onde estão os gargalos e as maiores oportunidades.",
       result:
         "Você passa a saber, com clareza, o que resolver primeiro para destravar o próximo crescimento.",
     },
@@ -210,7 +210,7 @@ export const services = {
       structure:
         "Definimos poucos números que importam e montamos uma rotina leve para acompanhá-los, no ritmo da empresa.",
       result:
-        "Você passa a saber onde investir tempo, pessoas e dinheiro — sem virar refém de planilha.",
+        "Você passa a saber onde investir tempo, pessoas e dinheiro, sem virar refém de planilha.",
     },
     {
       title: "Inteligência Artificial no Dia a Dia",
@@ -220,7 +220,7 @@ export const services = {
       structure:
         "Colocamos automações e inteligência artificial pra rodar em pontos simples da rotina, sem complicação.",
       result:
-        "Sobra mais tempo para o que traz cliente e receita — e menos energia no operacional.",
+        "Sobra mais tempo para o que traz cliente e receita, e menos energia no operacional.",
     },
   ],
 };
@@ -238,7 +238,7 @@ export const differentials = {
     {
       title: "Já vivemos esse tipo de empresa",
       description:
-        "Sabemos como é tocar um negócio em que tudo passa pelo dono — porque já estivemos desse lado.",
+        "Sabemos como é tocar um negócio em que tudo passa pelo dono, porque já estivemos desse lado.",
       icon: "Rocket",
     },
     {
@@ -276,9 +276,9 @@ export const about = {
     "Já estive do outro lado do balcão. Sei o que é a empresa crescer e, de repente, tudo depender de você.",
   paragraphs: [
     "O Rafael não aprendeu isso em livro. Passou mais de 15 anos dentro de operações comerciais, tocando o dia a dia de empresas que cresciam mais rápido do que conseguiam se organizar.",
-    "Viu de perto o mesmo filme se repetir: bom produto, cliente chegando, faturamento subindo — e um dono sobrecarregado, resolvendo tudo, sem tempo de olhar para frente. O problema quase nunca era vender. Era organizar e fazer acontecer.",
+    "Viu de perto o mesmo filme se repetir: bom produto, cliente chegando, faturamento subindo, e um dono sobrecarregado, resolvendo tudo, sem tempo de olhar para frente. O problema quase nunca era vender. Era organizar e fazer acontecer.",
     "Foi daí que nasceu a SPHERA: não para dar conselho de fora, mas para entrar junto e colocar a empresa em ordem na prática. Organizar o que já funciona, criar rotina sem perder agilidade e tirar o negócio da dependência total do dono.",
-    "Hoje ele faz isso lado a lado com pequenos e médios empresários de ramos variados — gente que construiu a empresa na raça e agora quer crescer com mais controle e menos sufoco.",
+    "Hoje ele faz isso lado a lado com pequenos e médios empresários de ramos variados: gente que construiu a empresa na raça e agora quer crescer com mais controle e menos sufoco.",
     "A convicção é simples: plano bom é o que sai do papel. Empresa organizada cresce melhor, e o dono volta a trabalhar no negócio, não só dentro dele.",
   ],
   tags: [
@@ -305,7 +305,7 @@ export const positioning = {
   },
   is: {
     label: "A SPHERA é",
-    text: "Quem entra junto com o seu time, organiza a gestão e o comercial e coloca pra funcionar no dia a dia — e fica até virar rotina. Menos relatório na gaveta, mais coisa acontecendo na sua empresa.",
+    text: "Quem entra junto com o seu time, organiza a gestão e o comercial e coloca pra funcionar no dia a dia, e fica até virar rotina. Menos relatório na gaveta, mais coisa acontecendo na sua empresa.",
   },
 };
 
@@ -323,7 +323,7 @@ export const contact = {
 
 export const footer = {
   description:
-    "A gente entra junto com pequenas e médias empresas para organizar a gestão e o comercial e colocar tudo pra funcionar — na prática, até virar rotina.",
+    "A gente entra junto com pequenas e médias empresas para organizar a gestão e o comercial e colocar tudo pra funcionar na prática, até virar rotina.",
   navTitle: "Navegação",
   contactTitle: "Contato",
   copyright: "Todos os direitos reservados.",

@@ -5,7 +5,7 @@ import { listLeads, type Lead } from "@/lib/leads";
 import { AdminDashboard } from "@/components/admin-dashboard";
 
 export const metadata: Metadata = {
-  title: "Leads — SPHERA Admin",
+  title: "Leads · SPHERA Admin",
   robots: { index: false, follow: false },
 };
 

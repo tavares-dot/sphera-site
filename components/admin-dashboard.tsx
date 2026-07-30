@@ -119,7 +119,7 @@ export function AdminDashboard({
                   >
                     <div className="min-w-0">
                       <p className="truncate font-semibold text-fg">
-                        {lead.empresa || "—"}
+                        {lead.empresa || "Sem empresa"}
                         <span className="ml-2 font-normal text-fg/50">
                           {lead.nome}
                         </span>

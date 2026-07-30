@@ -33,7 +33,7 @@ export async function notifyNewLead(lead: LeadInput): Promise<void> {
   const rows = Object.entries(LABELS)
     .map(([key, label]) => {
       const raw = (lead as Record<string, unknown>)[key];
-      const value = Array.isArray(raw) ? raw.join(", ") : raw ? String(raw) : "—";
+      const value = Array.isArray(raw) ? raw.join(", ") : raw ? String(raw) : "";
       return `<tr><td style="padding:6px 16px 6px 0;color:#888;white-space:nowrap;vertical-align:top">${label}</td><td style="padding:6px 0;color:#111">${value}</td></tr>`;
     })
     .join("");
@@ -55,7 +55,7 @@ export async function notifyNewLead(lead: LeadInput): Promise<void> {
       body: JSON.stringify({
         from: FROM,
         to: [TO],
-        subject: `Novo lead — ${lead.empresa || lead.nome}`,
+        subject: `Novo lead: ${lead.empresa || lead.nome}`,
         html,
         reply_to: lead.email,
       }),

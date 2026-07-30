@@ -141,8 +141,8 @@ const STEPS: Step[] = [
         type: "choice",
         options: [
           "Imediatamente",
-          "Nos próximos 1–3 meses",
-          "Em 3–6 meses",
+          "Nos próximos 1 a 3 meses",
+          "Em 3 a 6 meses",
           "Ainda explorando",
         ],
       },
