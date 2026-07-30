@@ -7,13 +7,17 @@
 //    (caso tenham colado a URL da "API de dados" em vez da URL base).
 function normalizeUrl(u?: string): string | undefined {
   if (!u) return u;
-  let s = u.trim();
+  // Pega só o primeiro endereço (caso tenham colado várias vezes/linhas).
+  let s = u.trim().split(/\s+/)[0];
   if (!/^https?:\/\//i.test(s)) s = "https://" + s;
   return s.replace(/\/+$/, "").replace(/\/rest\/v1$/i, "");
 }
 
 const SUPABASE_URL = normalizeUrl(process.env.SUPABASE_URL);
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+// Sanitiza a chave (remove espaços/quebras e eventuais colagens repetidas).
+const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
+  ? process.env.SUPABASE_SERVICE_ROLE_KEY.trim().split(/\s+/)[0]
+  : undefined;
 const TABLE = "onboarding_leads";
 
 /** Diagnóstico seguro (sem expor a chave) — usado só no preview. */
