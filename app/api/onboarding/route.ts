@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { insertLead, type LeadInput } from "@/lib/leads";
+import { insertLead, debugInfo, type LeadInput } from "@/lib/leads";
 import { notifyNewLead } from "@/lib/email";
 
 export const dynamic = "force-dynamic";
@@ -55,6 +55,7 @@ export async function POST(req: Request) {
         error: "Não foi possível salvar. Tente novamente em instantes.",
         // TEMPORÁRIO (preview): detalhe do erro para diagnóstico. Remover antes da produção.
         detail: e instanceof Error ? e.message : String(e),
+        debug: debugInfo(),
       },
       { status: 500 }
     );

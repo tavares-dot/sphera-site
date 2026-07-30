@@ -1,14 +1,29 @@
 // Helpers de servidor para gravar/ler leads do onboarding via Supabase REST.
 // Usa apenas a service_role key (secreta) — nunca exponha no cliente.
 
-// Normaliza a URL: remove barra final e um eventual sufixo /rest/v1
-// (caso tenham colado a URL da "API de dados" em vez da URL base).
-const RAW_URL = process.env.SUPABASE_URL;
-const SUPABASE_URL = RAW_URL
-  ? RAW_URL.trim().replace(/\/+$/, "").replace(/\/rest\/v1$/, "")
-  : RAW_URL;
+// Normaliza a URL do Supabase:
+//  - garante o esquema https:// (caso tenham colado sem)
+//  - remove barra final e um eventual sufixo /rest/v1
+//    (caso tenham colado a URL da "API de dados" em vez da URL base).
+function normalizeUrl(u?: string): string | undefined {
+  if (!u) return u;
+  let s = u.trim();
+  if (!/^https?:\/\//i.test(s)) s = "https://" + s;
+  return s.replace(/\/+$/, "").replace(/\/rest\/v1$/i, "");
+}
+
+const SUPABASE_URL = normalizeUrl(process.env.SUPABASE_URL);
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const TABLE = "onboarding_leads";
+
+/** Diagnóstico seguro (sem expor a chave) — usado só no preview. */
+export function debugInfo() {
+  return {
+    url: SUPABASE_URL || null,
+    hasKey: !!SERVICE_KEY,
+    keyPrefix: SERVICE_KEY ? SERVICE_KEY.slice(0, 12) : null,
+  };
+}
 
 export type Lead = {
   id: string;
