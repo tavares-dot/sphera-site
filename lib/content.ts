@@ -4,18 +4,6 @@
 // deve ficar hardcoded nos componentes.
 // ============================================================
 
-// Assets da marca. Hoje servidos pelo domínio atual; ao montar o GitHub,
-// mover para /public e trocar por caminhos locais (ex.: "/brand/...").
-const ASSET_BASE = "https://spheralab.com.br/__l5e/assets-v1";
-export const assets = {
-  logoDark: `${ASSET_BASE}/95a5e821-5601-4021-8a27-a3ffec5d5fa2/sphera-logo.png`,
-  logoLight: `${ASSET_BASE}/d8aed56d-703f-44af-9a06-23214a08b20b/sphera-logo-light.png`,
-  symbolBlack: `${ASSET_BASE}/1c80190c-5933-43f9-9401-e7eda3140bdb/sphera-symbol-black.png`,
-  symbolWhite: `${ASSET_BASE}/526bda53-cbdc-457d-bdd4-fe69281d55e7/sphera-symbol-white.png`,
-  symbolOrange: `${ASSET_BASE}/3f8d7663-367d-42b9-a5f1-86fed5745357/sphera-symbol-orange.png`,
-  rafael: `${ASSET_BASE}/bb947fb0-0533-4947-9ab9-ef555246ef64/rafael-tavares.jpg`,
-};
-
 export const site = {
   brand: "SPHERA",
   domain: "spheralab.com.br",
@@ -25,28 +13,27 @@ export const site = {
   whatsappNumber: "5548996924159",
   whatsapp: "https://wa.me/5548996924159",
   whatsappCta:
-    "https://wa.me/5548996924159?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20SPHERA%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico.",
+    "https://wa.me/5548996924159?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20SPHERA%20e%20gostaria%20de%20conversar%20sobre%20a%20opera%C3%A7%C3%A3o%20da%20minha%20empresa.",
   linkedin: "https://www.linkedin.com/in/rafaeltavaress",
   instagram: "https://www.instagram.com/lab.sphera/",
-  // Formulário: destino dos leads. Ver contact.tsx.
+  // Formulário: destino dos leads. Ver contact.tsx / onboarding.
   formEmail: "tavares@spheralab.com.br",
-  // Chave gratuita do Web3Forms (envia o form por e-mail). Vazio = fallback WhatsApp.
   formAccessKey: "",
-  tagline: "Processos claros. Indicadores confiáveis. Crescimento sustentável.",
+  tagline: "Clareza, previsibilidade e execução para crescer.",
   seo: {
     title: "SPHERA — Estruturação Comercial e Empresarial",
     description:
-      "A SPHERA estrutura operações empresariais e comerciais para organizações que precisam crescer com previsibilidade, organização e capacidade de execução.",
+      "Consultoria boutique de estruturação comercial e empresarial. A SPHERA organiza a operação de empresas que já cresceram e precisam crescer com previsibilidade e método.",
   },
 };
 
 export const marquee = [
-  "Estrutura",
+  "Método",
   "Previsibilidade",
   "Governança",
   "Indicadores",
-  "Processos",
   "Execução",
+  "Organização",
   "Escala",
 ];
 
@@ -59,82 +46,76 @@ export const nav = [
 ];
 
 export const hero = {
-  eyebrow: "Estruturação Comercial e Empresarial",
-  title: "Estrutura comercial e empresarial para crescer com previsibilidade.",
-  // Título quebrado para tratamento editorial (ênfase serifada no fim).
-  titleLead: "Estrutura comercial e empresarial para crescer com ",
-  titleEmphasis: "previsibilidade.",
+  eyebrow: "Consultoria de Estruturação Comercial e Empresarial",
   description:
-    "A SPHERA é uma empresa especializada em estruturar operações empresariais e comerciais para organizações que precisam crescer com previsibilidade, organização e capacidade de execução.",
-  primaryCta: "Agendar diagnóstico",
-  secondaryCta: "Conhecer a metodologia",
-  // Estabelece em segundos: quem, o que, para quem, como.
+    "A SPHERA é uma consultoria boutique que organiza a operação comercial e empresarial de quem já cresceu — e agora precisa crescer com previsibilidade, sem depender de heróis.",
+  primaryCta: "Solicitar Diagnóstico Estratégico",
+  secondaryCta: "Conhecer o método",
   meta: [
-    "Estruturação comercial e empresarial",
-    "Governança e indicadores",
-    "+15 anos de operação",
+    "Consultoria boutique",
+    "Método próprio, do diagnóstico à escala",
+    "+15 anos em operação",
   ],
 };
 
 export const manifesto = {
-  kicker: "Manifesto",
-  lead: "A maioria dos problemas de crescimento não está nas vendas.",
-  emphasis: "Está na operação.",
-  body: "Empresas maduras não crescem por esforço. Crescem por estrutura. Quando o processo é claro, o indicador é confiável e a execução tem método, o resultado deixa de depender do mês, do herói ou da sorte. Passa a ser consequência.",
-  signature: "SPHERA",
+  lead: "A maioria dos problemas de crescimento não nasce no comercial.",
+  emphasis: "Nasce na forma como a empresa opera.",
+  body: "Empresas maduras não crescem por esforço — crescem por método. Quando a rotina é clara, o indicador é confiável e a execução tem disciplina, o resultado deixa de depender do mês, do herói ou da sorte. Passa a ser consequência.",
 };
 
 export const problems = {
   eyebrow: "Diagnóstico",
-  title: "Sua empresa está crescendo ou apenas trabalhando mais?",
+  title: "Sua empresa está crescendo — ou apenas trabalhando mais?",
   intro:
-    "Empresas não deixam de crescer por falta de oportunidades. Elas deixam de crescer por falta de estrutura. Processos frágeis geram crescimento instável.",
+    "Se a empresa cresceu mas passou a depender de você para tudo, se o time vive apagando incêndios e cada semana parece mais complexa que a anterior, o problema raramente é falta de esforço. É a falta de um modelo capaz de sustentar o tamanho que você já alcançou.",
   items: [
     {
-      title: "CRM sem utilização",
+      title: "CRM que ninguém usa",
       description:
-        "Ferramenta cara, adoção baixa e dados que ninguém usa para decidir.",
+        "Uma ferramenta cara que virou repositório: dados que ninguém abre e decisões que continuam sendo tomadas no achismo.",
     },
     {
       title: "Vendas sem previsibilidade",
-      description: "Resultado depende do mês, do herói da equipe e da sorte.",
+      description:
+        "O resultado do mês depende do vendedor certo, do cliente certo e de um pouco de sorte — nunca de um sistema.",
     },
     {
-      title: "Falta de indicadores",
+      title: "Decisões sem indicadores",
       description:
-        "Decisões tomadas no achismo, sem métricas que orientem o caminho.",
+        "Sem números confiáveis, cada escolha vira aposta. E o gestor costuma descobrir o problema tarde demais.",
     },
     {
       title: "Dependência de pessoas-chave",
       description:
-        "Se alguém sai, a operação trava. O conhecimento não está no processo.",
+        "Se alguém sai, a operação trava. O conhecimento está nas cabeças, não no modelo de gestão.",
     },
     {
-      title: "Marketing desconectado do comercial",
+      title: "Marketing e comercial desalinhados",
       description:
-        "Geração de demanda e vendas correndo em trilhos separados.",
+        "Geração de demanda e vendas correndo em trilhos paralelos, cada área cobrando a outra pelo resultado.",
     },
     {
-      title: "Processos desorganizados",
-      description: "Cada um vende do seu jeito. Sem padrão, não há escala.",
+      title: "Cada um opera do seu jeito",
+      description:
+        "Sem um padrão, não há escala: o que funciona com uma pessoa não se repete com dez.",
     },
   ],
-  closing:
-    "A maioria dos problemas de crescimento não está nas vendas. Está na operação.",
 };
 
 export const methodology = {
   eyebrow: "Metodologia proprietária",
   title: "A Metodologia SPHERA",
   intro:
-    "Crescimento sustentável exige método, indicadores e execução. São seis estágios encadeados que levam a operação do diagnóstico à escala. Com estrutura, não com sorte.",
+    "Crescer com previsibilidade não é sorte — é método. Seis estágios encadeados que levam a operação do diagnóstico à escala, transformando esforço disperso em capacidade de execução.",
   stages: [
     {
       n: "01",
       key: "DIAGNÓSTICO",
       title: "Diagnóstico completo da operação",
       description:
-        "Mapeamento profundo de processos, pessoas, ferramentas e indicadores atuais.",
+        "Leitura profunda de pessoas, rotina, ferramentas e indicadores — separando o que trava o crescimento do que apenas incomoda.",
+      benefit: "Você enxerga, com clareza, onde a operação realmente trava.",
       icon: "Search",
     },
     {
@@ -142,7 +123,8 @@ export const methodology = {
       key: "ARQUITETURA",
       title: "Arquitetura do crescimento",
       description:
-        "Desenho do modelo comercial e empresarial ideal para o estágio da empresa.",
+        "Desenho do modelo comercial e empresarial ideal para o estágio atual da empresa — e para onde ela quer chegar.",
+      benefit: "Um modelo pensado para o tamanho que a empresa quer alcançar.",
       icon: "DraftingCompass",
     },
     {
@@ -150,15 +132,17 @@ export const methodology = {
       key: "INTEGRAÇÃO",
       title: "Integração entre áreas",
       description:
-        "Alinhamento entre geração de demanda, vendas e operação em um único fluxo.",
+        "Geração de demanda, vendas e entrega alinhadas em um único fluxo, com responsabilidades claras entre as áreas.",
+      benefit: "Marketing, vendas e entrega puxando na mesma direção.",
       icon: "Workflow",
     },
     {
       n: "04",
       key: "IMPLANTAÇÃO",
-      title: "Implantação dos processos",
+      title: "Implantação no dia a dia",
       description:
-        "Implementação prática de rotinas, CRM e governança comercial no dia a dia.",
+        "Rotinas, governança e CRM colocados para funcionar de verdade — não no slide, mas na operação real.",
+      benefit: "Método que vira rotina e acontece no dia a dia.",
       icon: "Settings2",
     },
     {
@@ -166,15 +150,17 @@ export const methodology = {
       key: "INDICADORES",
       title: "Previsibilidade e indicadores",
       description:
-        "Painel de indicadores que transforma dados em decisão e em receita.",
+        "Um painel que transforma dados em decisão: o que medir, o que ajustar e o que isso significa em receita.",
+      benefit: "Decisões baseadas em números, não em impressão.",
       icon: "BarChart3",
     },
     {
       n: "06",
       key: "ESCALA",
-      title: "Escala e otimização contínua",
+      title: "Escala e melhoria contínua",
       description:
-        "Ciclos de melhoria que sustentam o crescimento ao longo do tempo.",
+        "Ciclos de refinamento que sustentam o crescimento sem deixar a complexidade crescer junto.",
+      benefit: "Crescimento que se sustenta sem aumentar o caos.",
       icon: "TrendingUp",
     },
   ],
@@ -182,29 +168,29 @@ export const methodology = {
 
 export const services = {
   eyebrow: "Serviços",
-  title: "Como estruturamos o crescimento",
+  title: "Como organizamos o crescimento",
   intro:
-    "A SPHERA não vende software. A SPHERA estrutura operações. Cada frente parte de um problema real e entrega uma estrutura concreta que o cliente passa a operar.",
+    "A SPHERA não vende software nem entrega relatório para engavetar. Cada frente parte de um problema real e devolve uma capacidade que a empresa passa a operar por conta própria.",
   items: [
     {
       title: "Diagnóstico Estratégico",
       icon: "Search",
       problem:
-        "A empresa cresce, mas não enxerga com clareza onde a operação trava nem o que limita o resultado.",
+        "A empresa cresce, mas ninguém enxerga com clareza onde a operação trava nem o que limita o próximo salto.",
       structure:
-        "Mapeamento completo da operação comercial, dos processos, dos indicadores e das prioridades de crescimento.",
+        "Mapeamento completo da operação comercial, das rotinas, dos indicadores e das prioridades de crescimento.",
       result:
-        "Uma leitura precisa da empresa e um plano claro com as alavancas que destravam o próximo ciclo de crescimento.",
+        "Uma leitura precisa da empresa e um plano com as poucas alavancas que realmente destravam o próximo ciclo.",
     },
     {
       title: "Estruturação Comercial",
       icon: "LayoutGrid",
       problem:
-        "Cada pessoa vende de um jeito, sem processo, sem padrão e sem previsibilidade de receita.",
+        "Cada pessoa vende de um jeito, sem padrão e sem previsibilidade de receita.",
       structure:
-        "Processo comercial, funil de vendas, rotinas, governança e CRM organizados de ponta a ponta.",
+        "Funil de vendas, rotina comercial, governança e CRM desenhados e integrados de ponta a ponta.",
       result:
-        "Uma operação comercial padronizada, previsível e pronta para escalar sem depender de heróis.",
+        "Uma operação comercial que funciona sem depender de heróis — previsível o bastante para escalar.",
     },
     {
       title: "Gestão Comercial Estratégica",
@@ -214,27 +200,27 @@ export const services = {
       structure:
         "Condução da operação comercial, definição de metas, ritmo de gestão e acompanhamento de indicadores.",
       result:
-        "Direção experiente conduzindo o comercial com método, foco em resultado e disciplina de execução.",
+        "Direção experiente conduzindo o comercial com método — sem o custo de um executivo em tempo integral.",
     },
     {
-      title: "Processos e Indicadores",
+      title: "Gestão por Indicadores",
       icon: "BarChart3",
       problem:
-        "As decisões são tomadas no achismo, sem indicadores confiáveis para orientar o caminho.",
+        "As decisões são tomadas no achismo, sem números confiáveis para orientar o caminho.",
       structure:
-        "Padronização das rotinas críticas e definição dos indicadores que realmente importam para o negócio.",
+        "Padronização das rotinas críticas e definição dos indicadores que de fato movem o negócio.",
       result:
-        "Gestão orientada por dados, com clareza sobre o que medir, o que ajustar e onde investir.",
+        "Os gestores passam a saber exatamente onde investir tempo, pessoas e dinheiro.",
     },
     {
       title: "Inteligência Artificial Aplicada aos Negócios",
       icon: "Sparkles",
       problem:
-        "Tarefas repetitivas consomem o time e há dados que não viram produtividade nem decisão.",
+        "Tarefas repetitivas consomem o time e há dados que nunca viram produtividade nem decisão.",
       structure:
-        "Aplicação prática de automação e inteligência artificial nos pontos de maior atrito da operação.",
+        "Automação e inteligência artificial aplicadas, com critério, nos pontos de maior atrito da operação.",
       result:
-        "Ganho real de eficiência, com a equipe focada no que gera valor e decisões mais bem fundamentadas.",
+        "Menos tempo em tarefa repetitiva, mais tempo no que gera receita — e decisões mais bem embasadas.",
     },
   ],
 };
@@ -244,39 +230,39 @@ export const differentials = {
   title: "Por que a SPHERA",
   items: [
     {
-      title: "Estratégia + Operação",
+      title: "Estratégia que vira rotina",
       description:
-        "Pensamento estratégico que vira rotina executável. Não fica na apresentação.",
+        "Plano que não acontece não muda resultado. Aqui, cada decisão estratégica desce até a rotina de quem executa.",
       icon: "Compass",
     },
     {
-      title: "Experiência prática em crescimento",
+      title: "Método forjado na prática",
       description:
-        "Atuação real em operações que precisaram escalar com previsibilidade.",
+        "Construído dentro de operações reais que precisaram escalar — não em teoria de apresentação.",
       icon: "Rocket",
     },
     {
-      title: "Foco em implementação",
+      title: "Mão na operação, até funcionar",
       description:
-        "Mais do que recomendar, colocamos a mão na operação até funcionar.",
+        "Não paramos na recomendação. Ficamos até a mudança acontecer e passar a se sustentar sozinha.",
       icon: "Hammer",
     },
     {
-      title: "Metodologia proprietária",
+      title: "Um método próprio",
       description:
-        "O método SPHERA estrutura cada etapa do diagnóstico à escala.",
+        "Um caminho testado do diagnóstico à escala: menos improviso e mais previsibilidade em cada etapa.",
       icon: "Boxes",
     },
     {
       title: "Pessoas, processos e tecnologia",
       description:
-        "Integração dos três pilares que sustentam crescimento de verdade.",
+        "Crescimento não se sustenta em um pilar só. Integramos os três para que um não derrube o outro.",
       icon: "Users",
     },
     {
-      title: "Visão orientada a dados",
+      title: "Decisão orientada a números",
       description:
-        "Indicadores no centro de cada decisão, do board ao time comercial.",
+        "Indicadores no centro de cada escolha — do board ao comercial — para investir onde há retorno real.",
       icon: "LineChart",
     },
   ],
@@ -287,34 +273,21 @@ export const about = {
   name: "Rafael Tavares",
   role: "Fundador",
   quote:
-    "Estrutura não é burocracia. É o que permite uma empresa crescer sem depender de heróis.",
+    "Passei anos vendo boas empresas travarem no próprio crescimento. Quase nunca por falta de mercado — quase sempre por falta de método.",
   paragraphs: [
-    "Rafael Tavares é fundador da SPHERA e atua na estruturação de operações empresariais voltadas ao crescimento sustentável, previsibilidade comercial e eficiência organizacional.",
-    "Ao longo de mais de 15 anos de experiência profissional, desenvolveu e liderou iniciativas relacionadas à governança comercial, implantação de processos, definição de indicadores de desempenho, desenvolvimento de modelos de gestão e estruturação de operações capazes de sustentar o crescimento de empresas em diferentes momentos de maturidade.",
-    "Sua atuação combina visão estratégica, capacidade de execução e forte orientação a resultados, apoiando empresários e gestores na construção de negócios mais organizados, eficientes e preparados para crescer de forma consistente.",
-    "Sua formação executiva reúne especializações em estratégia empresarial, liderança, gestão de resultados e inteligência artificial aplicada aos negócios, permitindo integrar pessoas, processos, indicadores e tecnologia em soluções práticas voltadas à realidade de cada organização.",
-    "Hoje, através da SPHERA, auxilia empresas a transformar crescimento desorganizado em crescimento estruturado, criando bases sólidas para expansão, tomada de decisão e geração de resultados de longo prazo.",
+    "Ao longo de mais de 15 anos liderando operações comerciais, Rafael Tavares viu um padrão se repetir: empresas competentes, com bom produto e demanda, que simplesmente paravam de crescer. Não por falta de esforço, mas porque a operação não acompanhava o ritmo do crescimento.",
+    "Aprendeu, na prática, que crescer é a parte fácil. O difícil é sustentar — transformar vendas em previsibilidade, pessoas em processo e esforço em método. Foi dessa convicção que nasceu a SPHERA.",
+    "Sua leitura sobre crescimento é direta: uma empresa madura não deveria depender de heróis, de planilhas paralelas ou do improviso de cada mês. Deveria depender de um modelo — claro o suficiente para qualquer pessoa executar e sólido o suficiente para escalar.",
+    "Nessa trajetória, conduziu diagnósticos, desenhou modelos de gestão, implantou rotinas comerciais e organizou operações em diferentes estágios de maturidade, unindo visão estratégica a uma obsessão por execução.",
+    "Hoje, à frente da SPHERA, dedica-se a uma coisa: ajudar empresários a transformar crescimento desorganizado em crescimento com estrutura — do tipo que se sustenta muito depois do primeiro ciclo.",
   ],
   tags: [
     "Estruturação Empresarial",
     "Governança Comercial",
-    "Processos e Eficiência",
+    "Modelo de Gestão",
     "Indicadores e Performance",
     "Crescimento Sustentável",
-    "Inteligência Artificial aplicada aos Negócios",
-  ],
-};
-
-export const authority = {
-  eyebrow: "Autoridade",
-  title: "Experiência construída na prática.",
-  items: [
-    "+15 anos de experiência profissional",
-    "Projetos de transformação empresarial",
-    "Estruturação de operações comerciais",
-    "Experiência internacional",
-    "Liderança de iniciativas estratégicas",
-    "Transformação digital e inteligência de negócios",
+    "IA Aplicada aos Negócios",
   ],
 };
 
@@ -332,25 +305,25 @@ export const positioning = {
   },
   is: {
     label: "A SPHERA é",
-    text: "Uma empresa especializada em estruturar operações empresariais e comerciais para organizações que precisam crescer com previsibilidade, organização e capacidade de execução.",
+    text: "Uma consultoria boutique de estruturação comercial e empresarial, para empresas que já cresceram e agora precisam de organização, previsibilidade e capacidade de execução para sustentar o próximo ciclo.",
   },
 };
 
 export const contact = {
   eyebrow: "Vamos conversar",
-  title: "Sua empresa possui potencial para crescer.",
+  title: "Sua empresa tem potencial para crescer.",
   subtitle:
-    "A pergunta é: a operação está preparada para sustentar esse crescimento?",
-  whatsappCta: "Falar pelo WhatsApp",
-  submitCta: "Agendar Diagnóstico Estratégico",
+    "A pergunta é se a operação está preparada para sustentar esse crescimento.",
+  whatsappCta: "Conversar sobre a operação",
+  submitCta: "Solicitar Diagnóstico Estratégico",
   successTitle: "Recebemos o seu contato.",
   successText:
-    "Obrigado. Em breve entraremos em contato para agendar o seu Diagnóstico Estratégico.",
+    "Obrigado. Em breve retornamos para agendar o seu Diagnóstico Estratégico.",
 };
 
 export const footer = {
   description:
-    "Estruturação de operações comerciais e empresariais para crescer com previsibilidade.",
+    "Consultoria boutique de estruturação comercial e empresarial. Crescimento com organização, previsibilidade e execução.",
   navTitle: "Navegação",
   contactTitle: "Contato",
   copyright: "Todos os direitos reservados.",

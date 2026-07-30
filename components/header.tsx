@@ -41,7 +41,7 @@ export function Header() {
         </nav>
 
         <a href="/onboarding" className="btn-accent hidden md:inline-flex">
-          Agendar diagnóstico
+          Solicitar Diagnóstico
           <span aria-hidden>→</span>
         </a>
 
@@ -70,7 +70,7 @@ export function Header() {
               </a>
             ))}
             <a href="/onboarding" onClick={() => setOpen(false)} className="btn-accent mt-4 justify-center">
-              Agendar diagnóstico →
+              Solicitar Diagnóstico →
             </a>
           </nav>
         </div>

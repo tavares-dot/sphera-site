@@ -357,7 +357,7 @@ export function OnboardingForm() {
               disabled={submitting}
               className="btn-accent disabled:opacity-60"
             >
-              {submitting ? "Enviando…" : isLast ? "Enviar" : "Continuar"}
+              {submitting ? "Enviando…" : isLast ? "Enviar solicitação" : "Continuar"}
               <span aria-hidden>→</span>
             </button>
           </div>

@@ -39,6 +39,10 @@ export function Methodology() {
                   <p className="max-w-lg text-[15px] leading-relaxed text-fg/55">
                     {stage.description}
                   </p>
+                  <p className="mt-3 flex items-center gap-2 text-[13px] font-medium text-accent/85">
+                    <span aria-hidden className="h-1 w-1 rounded-full bg-accent/70" />
+                    {stage.benefit}
+                  </p>
                 </div>
               </div>
             </Reveal>

@@ -4,7 +4,7 @@ import { services } from "@/lib/content";
 
 const cols = [
   { key: "problem" as const, label: "Problema" },
-  { key: "structure" as const, label: "O que estruturamos" },
+  { key: "structure" as const, label: "O que construímos" },
   { key: "result" as const, label: "Resultado" },
 ];
 
