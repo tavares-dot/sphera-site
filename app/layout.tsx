@@ -17,7 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const url = `https://${site.domain}`;
+const url = site.canonicalUrl;
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

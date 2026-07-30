@@ -19,6 +19,8 @@ export const assets = {
 export const site = {
   brand: "SPHERA",
   domain: "spheralab.com.br",
+  // URL canônica (www é o host principal; o apex faz 308 -> www).
+  canonicalUrl: "https://www.spheralab.com.br",
   email: "contato@spheralab.com.br",
   whatsappNumber: "5548996924159",
   whatsapp: "https://wa.me/5548996924159",

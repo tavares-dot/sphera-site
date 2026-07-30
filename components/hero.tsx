@@ -49,7 +49,7 @@ export function Hero() {
 
           <Reveal delay={360}>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-              <a href="#contato" className="btn-accent justify-center">
+              <a href="/onboarding" className="btn-accent justify-center">
                 {hero.primaryCta}
                 <span aria-hidden>→</span>
               </a>

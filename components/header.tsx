@@ -40,7 +40,7 @@ export function Header() {
           ))}
         </nav>
 
-        <a href="#contato" className="btn-accent hidden md:inline-flex">
+        <a href="/onboarding" className="btn-accent hidden md:inline-flex">
           Agendar diagnóstico
           <span aria-hidden>→</span>
         </a>
@@ -69,7 +69,7 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <a href="#contato" onClick={() => setOpen(false)} className="btn-accent mt-4 justify-center">
+            <a href="/onboarding" onClick={() => setOpen(false)} className="btn-accent mt-4 justify-center">
               Agendar diagnóstico →
             </a>
           </nav>
