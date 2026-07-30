@@ -30,13 +30,13 @@ export function Hero() {
 
         <h1 className="d-hero display mt-8 max-w-[16ch] text-fg">
           <Reveal as="span" delay={60} className="block">
-            Estrutura para
+            Sua empresa
           </Reveal>
           <Reveal as="span" delay={140} className="block">
-            crescer com
+            cresceu. Agora
           </Reveal>
           <Reveal as="span" delay={220} className="block text-accent">
-            previsibilidade.
+            é organizar.
           </Reveal>
         </h1>
 
