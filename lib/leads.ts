@@ -20,15 +20,6 @@ const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
   : undefined;
 const TABLE = "onboarding_leads";
 
-/** Diagnóstico seguro (sem expor a chave) — usado só no preview. */
-export function debugInfo() {
-  return {
-    url: SUPABASE_URL || null,
-    hasKey: !!SERVICE_KEY,
-    keyPrefix: SERVICE_KEY ? SERVICE_KEY.slice(0, 12) : null,
-  };
-}
-
 export type Lead = {
   id: string;
   created_at: string;

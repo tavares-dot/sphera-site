@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { insertLead, debugInfo, type LeadInput } from "@/lib/leads";
+import { insertLead, type LeadInput } from "@/lib/leads";
 import { notifyNewLead } from "@/lib/email";
 
 export const dynamic = "force-dynamic";
@@ -50,13 +50,7 @@ export async function POST(req: Request) {
   } catch (e) {
     console.error("onboarding insert failed:", e);
     return NextResponse.json(
-      {
-        ok: false,
-        error: "Não foi possível salvar. Tente novamente em instantes.",
-        // TEMPORÁRIO (preview): detalhe do erro para diagnóstico. Remover antes da produção.
-        detail: e instanceof Error ? e.message : String(e),
-        debug: debugInfo(),
-      },
+      { ok: false, error: "Não foi possível salvar. Tente novamente em instantes." },
       { status: 500 }
     );
   }
