@@ -10,12 +10,17 @@ export function Methodology() {
           <Reveal><SectionMark index="02" label={methodology.eyebrow} /></Reveal>
           <Reveal delay={80}>
             <h2 className="d-1 display mt-8 text-fg">
-              A Metodologia <LogoInline className="ml-1" />
+              Ciclo <LogoInline className="ml-1" />
             </h2>
           </Reveal>
           <Reveal delay={140}>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-fg/55">
               {methodology.intro}
+            </p>
+          </Reveal>
+          <Reveal delay={180}>
+            <p className="mt-4 text-sm leading-relaxed text-fg/45">
+              {methodology.cycleSupport}
             </p>
           </Reveal>
         </div>
@@ -47,7 +52,33 @@ export function Methodology() {
               </div>
             </Reveal>
           ))}
-          <div className="border-t border-white/10" />
+          <Reveal>
+            <div className="flex items-center gap-4 border-t border-white/10 pt-8">
+              <svg
+                aria-hidden
+                className="h-5 w-5 shrink-0 text-accent"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20 12a8 8 0 1 1-2.34-5.66"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M17 3v4h-4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <p className="text-[15px] leading-relaxed text-fg/60">
+                {methodology.cycleNote}
+              </p>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

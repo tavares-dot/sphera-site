@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Result } from "@/components/result";
 import { Marquee } from "@/components/marquee";
 import { Problems } from "@/components/problems";
 import { Belief } from "@/components/belief";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <Result />
         <Marquee items={marquee} />
         <Problems />
         <Belief />

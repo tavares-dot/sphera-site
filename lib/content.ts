@@ -64,6 +64,15 @@ export const manifesto = {
   body: "Você já sabe boa parte do que precisa melhorar. O que falta é tempo e gente para fazer acontecer no meio da correria. A Sphera entra junto com o seu time, organiza o que está bagunçado e executa a mudança no dia a dia. Até virar rotina, não mais uma ideia parada na gaveta.",
 };
 
+export const result = {
+  eyebrow: "O resultado",
+  titleLead: "A empresa andando",
+  titleEmphasis: "sem você.",
+  body: "O objetivo é organizar a gestão, o comercial e a rotina da equipe para que as decisões deixem de ficar concentradas em você e a empresa consiga crescer com mais clareza, ritmo e autonomia.",
+  support:
+    "Não é tirar o dono da empresa. É fazer com que a empresa não dependa dele para tudo.",
+};
+
 export const belief = {
   eyebrow: "A crença",
   lead: "Sua empresa não tem problema de vendas.",
@@ -112,9 +121,13 @@ export const problems = {
 
 export const methodology = {
   eyebrow: "Como a gente trabalha",
-  title: "A Metodologia Sphera",
+  title: "Ciclo Sphera",
   intro:
-    "Organizar uma empresa não precisa virar um projeto complicado, e você não faz isso sozinho. São seis passos simples que a gente percorre junto com o seu time, botando a mão, até o negócio rodar sem depender só de você.",
+    "Organizar uma empresa não precisa virar um projeto complicado, e você não faz isso sozinho. O Ciclo Sphera reúne seis passos que percorremos junto com o seu time, da compreensão do problema à melhoria contínua, colocando a mão na operação até que a mudança vire rotina.",
+  cycleSupport:
+    "Um ciclo completo: entender, planejar, organizar, executar, acompanhar e crescer.",
+  cycleNote:
+    "E então o ciclo recomeça, porque uma operação organizada continua evoluindo.",
   stages: [
     {
       n: "01",
