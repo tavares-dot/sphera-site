@@ -30,8 +30,8 @@ export function Contact() {
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
             access_key: site.formAccessKey,
-            subject: "Novo contato do site SPHERA",
-            from_name: "Site SPHERA",
+            subject: "Novo contato do site Sphera",
+            from_name: "Site Sphera",
             ...data,
           }),
         });
@@ -50,7 +50,7 @@ export function Contact() {
 
     // Fallback: abre o WhatsApp já com os dados preenchidos.
     const msg =
-      "Olá! Vim pelo site da SPHERA.\n\n" +
+      "Olá! Vim pelo site da Sphera.\n\n" +
       `Nome: ${data.nome}\n` +
       `Empresa: ${data.empresa}\n` +
       `E-mail: ${data.email}\n` +

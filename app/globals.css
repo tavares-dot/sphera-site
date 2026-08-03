@@ -3,16 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* Dark, kinetic palette — RGB channels for Tailwind alpha modifiers. */
-  --bg: 8 8 9;
-  --bg-2: 17 17 19;
-  --bg-3: 24 24 27;
-  --fg: 244 243 240;
-  --accent: 226 114 23;
+  /* Paleta do Kit Sphera. Canais RGB para os alpha modifiers do Tailwind. */
+  --bg: 24 22 20; /* preto #181614 */
+  --bg-2: 32 29 27;
+  --bg-3: 41 37 34;
+  --fg: 244 243 240; /* cinza claro #F4F3F0 */
+  --accent: 226 114 23; /* laranja #E27217 */
   --accent-hi: 255 141 43;
-
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Fontes definidas por next/font (Space Grotesk / DM Sans / Space Mono). */
 }
 
 html {
@@ -45,11 +43,11 @@ h1, h2, h3, h4 {
 
 /* ---------- Type helpers ---------- */
 .kicker {
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.2em;
   color: rgb(var(--accent));
 }
 

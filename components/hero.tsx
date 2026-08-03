@@ -28,14 +28,11 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <h1 className="d-hero display mt-8 max-w-[16ch] text-fg">
+        <h1 className="d-hero display mt-8 max-w-[16ch] text-balance text-fg">
           <Reveal as="span" delay={60} className="block">
-            A gente não
+            A gente não só aconselha.
           </Reveal>
-          <Reveal as="span" delay={140} className="block">
-            só aconselha.
-          </Reveal>
-          <Reveal as="span" delay={220} className="block text-accent">
+          <Reveal as="span" delay={200} className="block text-accent">
             Executa junto.
           </Reveal>
         </h1>
@@ -49,7 +46,12 @@ export function Hero() {
 
           <Reveal delay={360}>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-              <a href="/onboarding" className="btn-accent justify-center">
+              <a
+                href={site.whatsappCta}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-accent justify-center"
+              >
                 {hero.primaryCta}
                 <span aria-hidden>→</span>
               </a>

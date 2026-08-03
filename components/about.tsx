@@ -22,7 +22,7 @@ export function About() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/brand/rafael-bw.jpg"
-                  alt="Rafael Tavares, fundador da SPHERA"
+                  alt="Rafael Tavares, fundador da Sphera"
                   width={520}
                   height={650}
                   className="mt-9 w-44 rounded-2xl border border-white/10 object-cover grayscale sm:w-52"

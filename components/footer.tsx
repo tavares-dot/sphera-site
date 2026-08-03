@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-white/10 pt-7 text-[13px] text-fg/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} SPHERA. {footer.copyright}</p>
+          <p>© {year} Sphera. {footer.copyright}</p>
           <p>{site.tagline}</p>
         </div>
       </div>

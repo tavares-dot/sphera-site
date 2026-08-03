@@ -1,11 +1,11 @@
 // ============================================================
-// SPHERA — Fonte de verdade de todo o conteúdo (copy) do site.
+// Sphera — Fonte de verdade de todo o conteúdo (copy) do site.
 // Edite apenas este arquivo para alterar textos. Nenhuma copy
 // deve ficar hardcoded nos componentes.
 // ============================================================
 
 export const site = {
-  brand: "SPHERA",
+  brand: "Sphera",
   domain: "spheralab.com.br",
   // URL canônica (www é o host principal; o apex faz 308 -> www).
   canonicalUrl: "https://www.spheralab.com.br",
@@ -13,7 +13,7 @@ export const site = {
   whatsappNumber: "5548996924159",
   whatsapp: "https://wa.me/5548996924159",
   whatsappCta:
-    "https://wa.me/5548996924159?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20SPHERA%20e%20gostaria%20de%20conversar%20sobre%20a%20minha%20empresa.",
+    "https://wa.me/5548996924159?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sphera%20e%20gostaria%20de%20conversar%20sobre%20a%20minha%20empresa.",
   linkedin: "https://www.linkedin.com/in/rafaeltavaress",
   instagram: "https://www.instagram.com/lab.sphera/",
   // Formulário: destino dos leads. Ver contact.tsx / onboarding.
@@ -21,9 +21,9 @@ export const site = {
   formAccessKey: "",
   tagline: "Organização que sai do papel e vira rotina.",
   seo: {
-    title: "SPHERA · Organização e Gestão para Pequenas e Médias Empresas",
+    title: "Sphera · Organização e Gestão para Pequenas e Médias Empresas",
     description:
-      "A SPHERA entra junto com pequenas e médias empresas para organizar a gestão e o comercial e colocar tudo pra funcionar na prática. Menos relatório, mais coisa acontecendo.",
+      "A Sphera entra junto com pequenas e médias empresas para organizar a gestão e o comercial e colocar tudo pra funcionar na prática. Menos relatório, mais coisa acontecendo.",
   },
 };
 
@@ -48,8 +48,8 @@ export const nav = [
 export const hero = {
   eyebrow: "Organização e execução para pequenas e médias empresas",
   description:
-    "Você não precisa de mais um relatório. A SPHERA entra junto com o seu time para organizar a gestão e o comercial e colocar tudo pra funcionar na prática, no dia a dia da sua empresa, até virar rotina.",
-  primaryCta: "Solicitar Diagnóstico",
+    "Você não precisa de mais um relatório. A Sphera entra junto com o seu time para organizar a gestão e o comercial e colocar tudo pra funcionar na prática, no dia a dia da sua empresa, até virar rotina.",
+  primaryCta: "Falar no WhatsApp",
   secondaryCta: "Ver como funciona",
   meta: [
     "A gente põe a mão junto",
@@ -61,7 +61,26 @@ export const hero = {
 export const manifesto = {
   lead: "Empresa não muda com relatório.",
   emphasis: "Muda quando alguém põe a mão junto.",
-  body: "Você já sabe boa parte do que precisa melhorar. O que falta é tempo e gente para fazer acontecer no meio da correria. A SPHERA entra junto com o seu time, organiza o que está bagunçado e executa a mudança no dia a dia. Até virar rotina, não mais uma ideia parada na gaveta.",
+  body: "Você já sabe boa parte do que precisa melhorar. O que falta é tempo e gente para fazer acontecer no meio da correria. A Sphera entra junto com o seu time, organiza o que está bagunçado e executa a mudança no dia a dia. Até virar rotina, não mais uma ideia parada na gaveta.",
+};
+
+export const belief = {
+  eyebrow: "A crença",
+  lead: "Sua empresa não tem problema de vendas.",
+  emphasis: "Tem problema de organização.",
+  body: "Vender mais em cima do caos só acelera o caos. Pesquisas do Sebrae apontam: o que fecha pequena empresa no Brasil é falta de gestão e organização, não falta de venda. Antes de correr atrás de mais cliente, organize o que você já tem.",
+};
+
+export const proof = {
+  eyebrow: "Lastro",
+  number: "15+",
+  numberLabel: "anos em operações comerciais",
+  lead: "Organizando, implantando e ficando até rodar.",
+  items: [
+    "Grupo Condor (9 anos): de negócios internacionais a Head de Estratégia e Projetos, com a criação da Futurtekmed.",
+    "Processo de desenvolvimento de produtos aderente à ISO 9001: desenhado, implantado e rodando. Não um parecer, o procedimento no ar.",
+    "Formação: Fundação Dom Cabral (Desenvolvimento de Dirigentes) e Pós em IA para Negócios (FIAP).",
+  ],
 };
 
 export const problems = {
@@ -105,7 +124,7 @@ export const problems = {
 
 export const methodology = {
   eyebrow: "Como a gente trabalha",
-  title: "A Metodologia SPHERA",
+  title: "A Metodologia Sphera",
   intro:
     "Organizar uma empresa não precisa virar um projeto complicado, e você não faz isso sozinho. São seis passos simples que a gente percorre junto com o seu time, botando a mão, até o negócio rodar sem depender só de você.",
   stages: [
@@ -170,7 +189,7 @@ export const services = {
   eyebrow: "Serviços",
   title: "No que a gente entra junto",
   intro:
-    "A SPHERA não vende sistema nem entrega relatório para engavetar. A gente organiza junto com você, coloca pra funcionar e fica até a empresa conseguir tocar sozinha.",
+    "A Sphera não vende sistema nem entrega relatório para engavetar. A gente organiza junto com você, coloca pra funcionar e fica até a empresa conseguir tocar sozinha.",
   items: [
     {
       title: "Diagnóstico da Empresa",
@@ -227,7 +246,7 @@ export const services = {
 
 export const differentials = {
   eyebrow: "Diferenciais",
-  title: "Por que a SPHERA",
+  title: "Por que a Sphera",
   items: [
     {
       title: "A gente executa, não só aconselha",
@@ -277,7 +296,7 @@ export const about = {
   paragraphs: [
     "O Rafael não aprendeu isso em livro. Passou mais de 15 anos dentro de operações comerciais, tocando o dia a dia de empresas que cresciam mais rápido do que conseguiam se organizar.",
     "Viu de perto o mesmo filme se repetir: bom produto, cliente chegando, faturamento subindo, e um dono sobrecarregado, resolvendo tudo, sem tempo de olhar para frente. O problema quase nunca era vender. Era organizar e fazer acontecer.",
-    "Foi daí que nasceu a SPHERA: não para dar conselho de fora, mas para entrar junto e colocar a empresa em ordem na prática. Organizar o que já funciona, criar rotina sem perder agilidade e tirar o negócio da dependência total do dono.",
+    "Foi daí que nasceu a Sphera: não para dar conselho de fora, mas para entrar junto e colocar a empresa em ordem na prática. Organizar o que já funciona, criar rotina sem perder agilidade e tirar o negócio da dependência total do dono.",
     "Hoje ele faz isso lado a lado com pequenos e médios empresários de ramos variados: gente que construiu a empresa na raça e agora quer crescer com mais controle e menos sufoco.",
     "A convicção é simples: plano bom é o que sai do papel. Empresa organizada cresce melhor, e o dono volta a trabalhar no negócio, não só dentro dele.",
   ],
@@ -293,18 +312,18 @@ export const about = {
 
 export const positioning = {
   eyebrow: "Posicionamento",
-  title: "O que a SPHERA é e o que não é.",
+  title: "O que a Sphera é e o que não é.",
   isNot: {
-    label: "A SPHERA NÃO É",
+    label: "A Sphera NÃO É",
     items: [
       "Agência",
-      "Software house",
+      "Empresa de software",
       "Empresa de marketing",
       "Consultoria que só aconselha",
     ],
   },
   is: {
-    label: "A SPHERA é",
+    label: "A Sphera é",
     text: "Quem entra junto e coloca a sua empresa pra funcionar. Menos relatório, mais coisa acontecendo.",
   },
 };

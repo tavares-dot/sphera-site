@@ -2,10 +2,12 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Marquee } from "@/components/marquee";
 import { Problems } from "@/components/problems";
+import { Belief } from "@/components/belief";
 import { Statement } from "@/components/statement";
 import { Methodology } from "@/components/methodology";
 import { Services } from "@/components/services";
 import { About } from "@/components/about";
+import { Proof } from "@/components/proof";
 import { Differentials } from "@/components/differentials";
 import { Positioning } from "@/components/positioning";
 import { Contact } from "@/components/contact";
@@ -21,11 +23,13 @@ export default function HomePage() {
         <Hero />
         <Marquee items={marquee} />
         <Problems />
+        <Belief />
         <Statement />
         <Methodology />
         <Marquee items={marquee} reverse duration={34} />
         <Services />
         <About />
+        <Proof />
         <Differentials />
         <Positioning />
         <Contact />

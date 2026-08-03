@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { Space_Grotesk, DM_Sans, Space_Mono } from "next/font/google";
 import { site } from "@/lib/content";
 import "./globals.css";
 
-const archivo = Archivo({
+const display = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
 
-const inter = Inter({
+const body = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
+  display: "swap",
+});
+
+const mono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -26,12 +33,12 @@ export const metadata: Metadata = {
   applicationName: site.brand,
   authors: [{ name: site.brand }],
   keywords: [
-    "estruturação comercial",
-    "estruturação empresarial",
+    "organização de empresas",
     "gestão comercial",
-    "processos e indicadores",
-    "previsibilidade de vendas",
-    "SPHERA",
+    "execução",
+    "pequenas e médias empresas",
+    "consultor executor",
+    "Sphera",
   ],
   alternates: { canonical: url },
   openGraph: {
@@ -68,7 +75,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${archivo.variable} ${inter.variable}`}>
+    <html
+      lang="pt-BR"
+      className={`${display.variable} ${body.variable} ${mono.variable}`}
+    >
       <body>
         <script
           type="application/ld+json"

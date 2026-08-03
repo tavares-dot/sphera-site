@@ -39,7 +39,7 @@ export function AdminLoginForm() {
       <form onSubmit={submit} className="w-full max-w-sm">
         <Logo className="mx-auto h-9 w-auto" />
         <h1 className="display mt-8 text-center text-2xl font-extrabold">
-          Painel SPHERA
+          Painel Sphera
         </h1>
         <p className="mt-2 text-center text-sm text-fg/50">
           Acesso restrito.

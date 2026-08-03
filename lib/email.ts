@@ -3,7 +3,7 @@
 import type { LeadInput } from "./leads";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const FROM = process.env.RESEND_FROM || "SPHERA <onboarding@resend.dev>";
+const FROM = process.env.RESEND_FROM || "Sphera <onboarding@resend.dev>";
 const TO = process.env.LEADS_EMAIL || "tavares@spheralab.com.br";
 
 const LABELS: Record<string, string> = {
@@ -41,7 +41,7 @@ export async function notifyNewLead(lead: LeadInput): Promise<void> {
   const html = `
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:560px">
       <h2 style="margin:0 0 4px">Novo Diagnóstico solicitado</h2>
-      <p style="margin:0 0 16px;color:#666">Via /onboarding no site da SPHERA.</p>
+      <p style="margin:0 0 16px;color:#666">Via /onboarding no site da Sphera.</p>
       <table style="border-collapse:collapse;font-size:14px">${rows}</table>
     </div>`;
 

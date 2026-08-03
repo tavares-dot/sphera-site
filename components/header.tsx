@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "./brand";
-import { nav } from "@/lib/content";
+import { nav, site } from "@/lib/content";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +24,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-[88px] max-w-wide items-center justify-between px-5 lg:px-10">
-        <a href="#top" aria-label="SPHERA" className="shrink-0">
+        <a href="#top" aria-label="Sphera" className="shrink-0">
           <Logo className="h-14 w-auto lg:h-[3.9rem]" />
         </a>
 
@@ -45,8 +45,13 @@ export function Header() {
           })}
         </nav>
 
-        <a href="/onboarding" className="btn-accent hidden md:inline-flex">
-          Solicitar Diagnóstico
+        <a
+          href={site.whatsappCta}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-accent hidden md:inline-flex"
+        >
+          Falar no WhatsApp
           <span aria-hidden>→</span>
         </a>
 
@@ -76,8 +81,14 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <a href="/onboarding" onClick={() => setOpen(false)} className="btn-accent mt-4 justify-center">
-              Solicitar Diagnóstico →
+            <a
+              href={site.whatsappCta}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="btn-accent mt-4 justify-center"
+            >
+              Falar no WhatsApp →
             </a>
           </nav>
         </div>

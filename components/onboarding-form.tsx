@@ -261,7 +261,7 @@ export function OnboardingForm() {
       ? (data.desafios as string[]).join(", ")
       : "";
     const lines = [
-      "Olá! Preenchi o diagnóstico no site da SPHERA.",
+      "Olá! Preenchi o diagnóstico no site da Sphera.",
       "",
       `Nome: ${data.nome || ""}`,
       `Empresa: ${data.empresa || ""}`,
@@ -483,7 +483,7 @@ function TopBar() {
   return (
     <header className="border-b border-white/10">
       <div className="mx-auto flex max-w-2xl items-center justify-between px-5 py-5">
-        <Link href="/" aria-label="SPHERA">
+        <Link href="/" aria-label="Sphera">
           <Logo className="h-8 w-auto" />
         </Link>
         <Link href="/" className="link-line text-[13px] text-fg/50">

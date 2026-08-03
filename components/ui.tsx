@@ -29,7 +29,7 @@ export function SectionMark({
 }) {
   return (
     <div className={`flex items-center gap-4 ${className}`}>
-      <span className="font-display text-sm font-semibold tabular-nums text-accent">
+      <span className="font-mono text-sm font-bold tabular-nums text-accent">
         {index}
       </span>
       <span className="reveal-line h-px w-12 origin-left bg-accent/50" />

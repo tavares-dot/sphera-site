@@ -6,7 +6,7 @@ export function Logo({ className = "h-7 w-auto" }: { className?: string }) {
   return (
     <img
       src="/brand/sphera-logo.svg"
-      alt="SPHERA"
+      alt="Sphera"
       className={`${className} select-none`}
       draggable={false}
     />
@@ -18,7 +18,7 @@ export function LogoInline({ className = "" }: { className?: string }) {
   return (
     <img
       src="/brand/sphera-logo.svg"
-      alt="SPHERA"
+      alt="Sphera"
       className={`inline-block h-[1.05em] w-auto translate-y-[0.1em] select-none ${className}`}
       draggable={false}
     />
@@ -26,16 +26,16 @@ export function LogoInline({ className = "" }: { className?: string }) {
 }
 
 /**
- * Renders body text, highlighting every "SPHERA" occurrence in orange so the
+ * Renders body text, highlighting every "Sphera" occurrence in orange so the
  * brand name stands out against the dark background.
  */
 export function Brand({ children }: { children: string }): ReactNode {
-  const parts = children.split("SPHERA");
+  const parts = children.split("Sphera");
   return parts.map((part, i) => (
     <Fragment key={i}>
       {part}
       {i < parts.length - 1 && (
-        <span className="font-semibold text-accent">SPHERA</span>
+        <span className="font-semibold text-accent">Sphera</span>
       )}
     </Fragment>
   ));
