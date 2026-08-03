@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
 import { site } from "@/lib/content";
+import { SmoothScroll } from "@/components/smooth-scroll";
+import { Cursor } from "@/components/cursor";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -74,6 +76,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <SmoothScroll />
+        <Cursor />
         {children}
       </body>
     </html>

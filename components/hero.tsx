@@ -16,7 +16,9 @@ export function Hero() {
       >
         <Parallax speed={0.06} className="relative h-full w-full">
           <div className="absolute inset-[16%] rounded-full bg-accent/20 blur-[80px] glow-pulse" />
-          <Sphere className="h-full w-full" />
+          <div className="hero-float h-full w-full">
+            <Sphere className="h-full w-full" />
+          </div>
         </Parallax>
       </div>
 
@@ -33,7 +35,26 @@ export function Hero() {
             A gente não só aconselha.
           </Reveal>
           <Reveal as="span" delay={200} className="block text-accent">
-            Executa junto.
+            <span className="relative inline-block">
+              Executa junto.
+              <svg
+                aria-hidden
+                className="hero-underline pointer-events-none absolute left-0 top-full w-full"
+                style={{ height: "0.2em" }}
+                viewBox="0 0 300 14"
+                fill="none"
+                preserveAspectRatio="none"
+              >
+                <path
+                  className="draw-path"
+                  pathLength={1}
+                  d="M3,9 C55,3 110,12 165,6 C215,1 262,11 297,5"
+                  stroke="#E27217"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </span>
           </Reveal>
         </h1>
 
@@ -50,6 +71,7 @@ export function Hero() {
                 href={site.whatsappCta}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-magnetic
                 className="btn-accent justify-center"
               >
                 {hero.primaryCta}
@@ -61,6 +83,27 @@ export function Hero() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={480}>
+          <svg
+            aria-hidden
+            className="chaos mt-14 h-8 w-52 sm:w-60"
+            viewBox="0 0 300 40"
+            fill="none"
+          >
+            <path
+              className="draw-path"
+              pathLength={1}
+              d="M2,20 C10,4 22,36 33,20 C44,7 40,34 55,20 C71,9 95,31 120,20 L282,20"
+              stroke="#E27217"
+              strokeOpacity="0.85"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <circle className="pop-dot" cx="290" cy="20" r="7" fill="#E27217" />
+          </svg>
+        </Reveal>
 
         <Reveal delay={420}>
           <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center">

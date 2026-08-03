@@ -49,6 +49,7 @@ export function Header() {
           href={site.whatsappCta}
           target="_blank"
           rel="noopener noreferrer"
+          data-magnetic
           className="btn-accent hidden md:inline-flex"
         >
           Falar no WhatsApp
