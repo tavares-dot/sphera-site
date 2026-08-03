@@ -64,6 +64,8 @@ h1, h2, h3, h4 {
 .d-hero { font-size: clamp(2.9rem, 9vw, 8.5rem); }
 .d-1 { font-size: clamp(2.4rem, 6vw, 5rem); }
 .d-2 { font-size: clamp(1.8rem, 4vw, 3.2rem); }
+/* Título do Diagnóstico: menor no mobile p/ agrupar melhor as palavras. */
+.d-diag { font-size: clamp(1.9rem, 6vw, 5rem); }
 
 /* ---------- Buttons / links ---------- */
 .btn-accent {

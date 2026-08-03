@@ -10,7 +10,7 @@ export function Problems() {
             <div className="lg:sticky lg:top-28">
               <Reveal><SectionMark index="01" label={problems.eyebrow} /></Reveal>
               <Reveal delay={80}>
-                <h2 className="d-1 display mt-8 text-balance text-fg">
+                <h2 className="d-diag display mt-8 text-balance text-fg">
                   {problems.title}
                 </h2>
               </Reveal>
