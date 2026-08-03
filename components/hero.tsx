@@ -16,7 +16,7 @@ export function Hero() {
       >
         <Parallax speed={0.06} className="relative h-full w-full">
           <div className="absolute inset-[16%] rounded-full bg-accent/20 blur-[80px] glow-pulse" />
-          <Sphere className="h-full w-full" speed={24} />
+          <Sphere className="h-full w-full" />
         </Parallax>
       </div>
 

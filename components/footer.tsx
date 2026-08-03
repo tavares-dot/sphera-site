@@ -24,7 +24,7 @@ export function Footer() {
         className="pointer-events-none absolute right-[-6%] top-1/2 h-[34vw] w-[34vw] max-h-[440px] max-w-[440px] -translate-y-1/2 opacity-30"
       >
         <Parallax speed={0.04} className="h-full w-full">
-          <Sphere className="h-full w-full" speed={42} showCore={false} />
+          <Sphere className="h-full w-full" />
         </Parallax>
       </div>
 

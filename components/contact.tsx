@@ -70,7 +70,7 @@ export function Contact() {
         className="pointer-events-none absolute right-[-8%] top-[-10%] h-[36vw] w-[36vw] opacity-40"
       >
         <Parallax speed={0.07} className="h-full w-full">
-          <Sphere className="h-full w-full" speed={16} />
+          <Sphere className="h-full w-full" />
         </Parallax>
       </div>
       <div className="mx-auto max-w-wide px-5 py-28 lg:px-10 lg:py-40">

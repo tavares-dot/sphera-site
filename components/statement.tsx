@@ -10,7 +10,7 @@ export function Statement() {
         className="pointer-events-none absolute left-[-10%] top-1/2 h-[40vw] w-[40vw] -translate-y-1/2 opacity-40"
       >
         <Parallax speed={0.05} className="h-full w-full">
-          <Sphere className="h-full w-full" speed={34} showCore={false} />
+          <Sphere className="h-full w-full" />
         </Parallax>
       </div>
       <div className="mx-auto max-w-wide px-5 py-28 lg:px-10 lg:py-40">

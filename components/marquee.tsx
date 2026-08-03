@@ -16,8 +16,8 @@ export function Marquee({
         style={{ ["--marquee-dur" as string]: `${duration}s` }}
       >
         {row.map((item, i) => (
-          <span key={i} className="flex items-center">
-            <span className="display px-8 text-2xl font-extrabold uppercase tracking-tight text-fg/85 sm:text-3xl">
+          <span key={i} className="flex shrink-0 items-center">
+            <span className="display whitespace-nowrap px-8 text-2xl font-extrabold uppercase tracking-tight text-fg/85 sm:text-3xl">
               {item}
             </span>
             <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
