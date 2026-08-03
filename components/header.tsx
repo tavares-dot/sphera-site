@@ -29,15 +29,20 @@ export function Header() {
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="link-line text-[12px] font-medium uppercase tracking-[0.14em] text-fg/60 transition-colors hover:text-fg"
-            >
-              {item.label}
-            </a>
-          ))}
+          {nav.map((item, i) => {
+            const orange = i % 2 === 0;
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`text-[12px] font-bold uppercase tracking-[0.14em] ${
+                  orange ? "link-line-white text-accent" : "link-line text-fg"
+                }`}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
         <a href="/onboarding" className="btn-accent hidden md:inline-flex">
@@ -59,12 +64,14 @@ export function Header() {
       {open && (
         <div className="border-t border-white/10 bg-bg/95 backdrop-blur-xl md:hidden">
           <nav className="mx-auto flex max-w-wide flex-col px-5 py-3">
-            {nav.map((item) => (
+            {nav.map((item, i) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="border-b border-white/10 py-4 text-base font-medium text-fg/85 last:border-0"
+                className={`border-b border-white/10 py-4 text-base font-bold last:border-0 ${
+                  i % 2 === 0 ? "text-accent" : "text-fg"
+                }`}
               >
                 {item.label}
               </a>

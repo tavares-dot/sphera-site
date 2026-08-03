@@ -112,6 +112,16 @@ h1, h2, h3, h4 {
 }
 .link-line:hover { background-size: 100% 1.5px; }
 
+/* Variante com sublinhado branco (para palavras em laranja). */
+.link-line-white {
+  background-image: linear-gradient(rgb(var(--fg)), rgb(var(--fg)));
+  background-size: 0% 1.5px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.link-line-white:hover { background-size: 100% 1.5px; }
+
 /* ---------- Marquee ---------- */
 .marquee {
   display: flex;
