@@ -282,11 +282,19 @@ export const about = {
   quote:
     "Já estive do outro lado do balcão. Sei o que é a empresa crescer e, de repente, tudo depender de você.",
   paragraphs: [
-    "O Rafael não aprendeu isso em livro. Passou mais de 15 anos dentro de operações comerciais, tocando o dia a dia de empresas que cresciam mais rápido do que conseguiam se organizar.",
-    "Viu de perto o mesmo filme se repetir: bom produto, cliente chegando, faturamento subindo, e um dono sobrecarregado, resolvendo tudo, sem tempo de olhar para frente. O problema quase nunca era vender. Era organizar e fazer acontecer.",
-    "Foi daí que nasceu a Sphera: não para dar conselho de fora, mas para entrar junto e colocar a empresa em ordem na prática. Organizar o que já funciona, criar rotina sem perder agilidade e tirar o negócio da dependência total do dono.",
-    "Hoje ele faz isso lado a lado com pequenos e médios empresários de ramos variados: gente que construiu a empresa na raça e agora quer crescer com mais controle e menos sufoco.",
-    "A convicção é simples: plano bom é o que sai do papel. Empresa organizada cresce melhor, e o dono volta a trabalhar no negócio, não só dentro dele.",
+    "Depois de mais de 15 anos trabalhando dentro de operações comerciais, percebi que empresas raramente deixam de crescer por falta de clientes.",
+    "Na maioria das vezes, o crescimento acontece. O faturamento aumenta. A equipe cresce. Os desafios também. E, sem perceber, o dono passa a ser o centro de tudo. Cada decisão depende dele, cada problema chega à sua mesa e cada novo cliente aumenta ainda mais a carga de trabalho.",
+    "O problema deixa de ser vender. Passa a ser organizar a empresa para sustentar o crescimento.",
+    "Foi exatamente nesse cenário que construí minha carreira. Durante mais de uma década, atuei estruturando operações comerciais, liderando projetos estratégicos, implantando processos, indicadores e modelos de gestão que transformavam empresas dependentes de pessoas em empresas capazes de crescer com mais previsibilidade, organização e capacidade de execução.",
+    "Ao longo dessa jornada, participei da evolução de empresas em diferentes estágios de crescimento. Vi de perto o impacto que uma operação organizada pode gerar e também o quanto a falta de estrutura limita negócios com enorme potencial.",
+    "Mas também percebi outro problema.",
+    "Grande parte das consultorias entregava diagnósticos impecáveis, apresentações bonitas e planos estratégicos completos. O empresário entendia o caminho, mas continuava sozinho para executar. O planejamento acabava esquecido em uma gaveta enquanto a rotina voltava a consumir toda a energia da empresa.",
+    "Foi para mudar essa realidade que nasceu a Sphera.",
+    "A Sphera não foi criada para entregar relatórios. Foi criada para trabalhar ao lado do empresário, organizando a operação, implantando processos, estruturando indicadores, fortalecendo a liderança e transformando planejamento em execução.",
+    "Essa forma de atuar nasceu da prática e foi fortalecida por uma formação contínua em gestão e estratégia. Sou graduado em Relações Internacionais pelo Centro Universitário Internacional (Uninter), participei do Programa de Desenvolvimento de Dirigentes (PDD) da Fundação Dom Cabral e sou pós-graduado em Gestão Estratégica e IA aplicada aos Negócios (FIAP + Alura). Acredito que empresas crescem de forma sustentável quando estratégia, gestão e execução caminham juntas.",
+    "No fim, minha convicção continua sendo a mesma.",
+    "Empresas não precisam depender do dono para funcionar. Precisam de estrutura para crescer.",
+    "Se hoje sua empresa depende de você para praticamente tudo, esse não é um problema de dedicação. É um problema de organização. E é exatamente isso que a Sphera existe para resolver.",
   ],
   tags: [
     "Organização",
@@ -296,8 +304,6 @@ export const about = {
     "Execução no dia a dia",
     "IA aplicada ao negócio",
   ],
-  formation:
-    "Formação: Fundação Dom Cabral (Desenvolvimento de Dirigentes), Pós em IA para Negócios (FIAP) e Relações Internacionais.",
 };
 
 export const positioning = {
