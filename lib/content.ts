@@ -71,18 +71,6 @@ export const belief = {
   body: "Vender mais em cima do caos só acelera o caos. Pesquisas do Sebrae apontam: o que fecha pequena empresa no Brasil é falta de gestão e organização, não falta de venda. Antes de correr atrás de mais cliente, organize o que você já tem.",
 };
 
-export const proof = {
-  eyebrow: "Lastro",
-  number: "15+",
-  numberLabel: "anos em operações comerciais",
-  lead: "Organizando, implantando e ficando até rodar.",
-  items: [
-    "Grupo Condor (9 anos): de negócios internacionais a Head de Estratégia e Projetos, com a criação da Futurtekmed.",
-    "Processo de desenvolvimento de produtos aderente à ISO 9001: desenhado, implantado e rodando. Não um parecer, o procedimento no ar.",
-    "Formação: Fundação Dom Cabral (Desenvolvimento de Dirigentes) e Pós em IA para Negócios (FIAP).",
-  ],
-};
-
 export const problems = {
   eyebrow: "Diagnóstico",
   title: "Sua empresa está crescendo ou apenas trabalhando mais?",
@@ -308,13 +296,15 @@ export const about = {
     "Execução no dia a dia",
     "IA aplicada ao negócio",
   ],
+  formation:
+    "Formação: Fundação Dom Cabral (Desenvolvimento de Dirigentes), Pós em IA para Negócios (FIAP) e Relações Internacionais.",
 };
 
 export const positioning = {
   eyebrow: "Posicionamento",
   title: "O que a Sphera é e o que não é.",
   isNot: {
-    label: "A Sphera NÃO É",
+    label: "A SPHERA NÃO É",
     items: [
       "Agência",
       "Empresa de software",

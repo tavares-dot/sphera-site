@@ -43,11 +43,11 @@ h1, h2, h3, h4 {
 
 /* ---------- Type helpers ---------- */
 .kicker {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 0.72rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.24em;
   color: rgb(var(--accent));
 }
 

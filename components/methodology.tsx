@@ -25,7 +25,7 @@ export function Methodology() {
             <Reveal key={stage.n}>
               <div className="group grid grid-cols-1 items-baseline gap-y-3 border-t border-white/10 py-8 transition-colors hover:border-accent/40 md:grid-cols-12 md:gap-x-8 md:py-9">
                 <div className="md:col-span-2">
-                  <span className="font-mono text-4xl font-bold tabular-nums text-white/15 transition-colors group-hover:text-accent">
+                  <span className="font-display text-4xl font-extrabold tabular-nums text-white/15 transition-colors group-hover:text-accent">
                     {stage.n}
                   </span>
                 </div>

@@ -31,7 +31,7 @@ export function Services() {
                 <div className="grid gap-y-6 lg:grid-cols-12 lg:gap-x-10">
                   <div className="lg:col-span-4">
                     <div className="flex items-baseline gap-4">
-                      <span className="font-mono text-sm font-bold tabular-nums text-accent">
+                      <span className="font-display text-sm font-bold tabular-nums text-accent">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <h3 className="font-display text-2xl font-bold tracking-tight text-fg">

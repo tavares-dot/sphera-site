@@ -27,7 +27,7 @@ export function Problems() {
               {problems.items.map((item, i) => (
                 <Reveal as="li" key={item.title} delay={i * 60}>
                   <div className="group grid grid-cols-[auto_1fr] gap-x-6 border-t border-white/10 py-7 transition-colors first:border-t-0 first:pt-0 hover:border-accent/40">
-                    <span className="font-mono text-sm font-bold tabular-nums text-accent">
+                    <span className="font-display text-sm font-bold tabular-nums text-accent">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>

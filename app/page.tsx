@@ -7,7 +7,6 @@ import { Statement } from "@/components/statement";
 import { Methodology } from "@/components/methodology";
 import { Services } from "@/components/services";
 import { About } from "@/components/about";
-import { Proof } from "@/components/proof";
 import { Differentials } from "@/components/differentials";
 import { Positioning } from "@/components/positioning";
 import { Contact } from "@/components/contact";
@@ -29,7 +28,6 @@ export default function HomePage() {
         <Marquee items={marquee} reverse duration={34} />
         <Services />
         <About />
-        <Proof />
         <Differentials />
         <Positioning />
         <Contact />

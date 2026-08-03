@@ -1,26 +1,19 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, DM_Sans, Space_Mono } from "next/font/google";
+import { Archivo, Inter } from "next/font/google";
 import { site } from "@/lib/content";
 import "./globals.css";
 
-const display = Space_Grotesk({
+const archivo = Archivo({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-display",
   display: "swap",
 });
 
-const body = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   variable: "--font-body",
-  display: "swap",
-});
-
-const mono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -75,10 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${display.variable} ${body.variable} ${mono.variable}`}
-    >
+    <html lang="pt-BR" className={`${archivo.variable} ${inter.variable}`}>
       <body>
         <script
           type="application/ld+json"

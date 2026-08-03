@@ -26,7 +26,7 @@ export function Positioning() {
 
           <div className="lg:col-span-7 lg:col-start-6">
             <Reveal delay={100}>
-              <p className="kicker text-accent">A Sphera é</p>
+              <p className="kicker text-accent">A SPHERA é</p>
               <p className="display mt-6 max-w-[22ch] text-3xl font-extrabold leading-[1.08] tracking-tight text-fg sm:text-4xl lg:text-5xl">
                 {positioning.is.text}
               </p>

@@ -25,7 +25,7 @@ export function About() {
                   alt="Rafael Tavares, fundador da Sphera"
                   width={520}
                   height={650}
-                  className="mt-9 w-44 rounded-2xl border border-white/10 object-cover grayscale sm:w-52"
+                  className="mt-9 aspect-[4/5] w-full max-w-[17rem] rounded-2xl border border-white/10 object-cover object-center grayscale"
                   draggable={false}
                 />
               </Reveal>
@@ -53,8 +53,14 @@ export function About() {
                 </Reveal>
               ))}
             </div>
+            <Reveal delay={60}>
+              <p className="mt-10 max-w-xl text-[15px] leading-relaxed text-fg/55">
+                <span className="font-semibold text-accent">Formação acadêmica.</span>{" "}
+                {about.formation.replace(/^Formação:\s*/, "")}
+              </p>
+            </Reveal>
             <Reveal delay={80}>
-              <div className="mt-12 border-t border-white/10 pt-8">
+              <div className="mt-10 border-t border-white/10 pt-8">
                 <ul className="flex flex-wrap gap-x-6 gap-y-2">
                   {about.tags.map((tag) => (
                     <li key={tag} className="text-[13px] font-medium tracking-wide text-fg/50">
