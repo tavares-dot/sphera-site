@@ -8,12 +8,6 @@ import {
 } from "./icons";
 import { nav, footer, site } from "@/lib/content";
 
-const socials = [
-  { label: "Instagram", href: site.instagram, Icon: InstagramIcon },
-  { label: "LinkedIn", href: site.linkedin, Icon: LinkedinIcon },
-  { label: "WhatsApp", href: site.whatsappCta, Icon: WhatsappIcon },
-];
-
 export function Footer() {
   const year = 2026;
   return (
@@ -35,20 +29,6 @@ export function Footer() {
             <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-fg/50">
               {footer.description}
             </p>
-            <div className="mt-7 flex items-center gap-3">
-              {socials.map(({ label, href, Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 text-fg/70 transition-colors hover:border-accent hover:bg-accent hover:text-black"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <nav className="lg:col-span-3">

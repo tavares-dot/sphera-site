@@ -19,7 +19,7 @@ export function LogoInline({ className = "" }: { className?: string }) {
     <img
       src="/brand/sphera-logo.svg"
       alt="SPHERA"
-      className={`inline-block h-[0.82em] w-auto translate-y-[0.04em] select-none ${className}`}
+      className={`inline-block h-[1.05em] w-auto translate-y-[0.1em] select-none ${className}`}
       draggable={false}
     />
   );

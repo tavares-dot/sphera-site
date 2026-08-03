@@ -15,7 +15,7 @@ export function Positioning() {
                 {positioning.isNot.items.map((item) => (
                   <li
                     key={item}
-                    className="font-display text-2xl font-bold text-fg/30 line-through decoration-white/20 decoration-1"
+                    className="font-display text-2xl font-bold text-fg/30 line-through decoration-accent/40 decoration-1"
                   >
                     {item}
                   </li>

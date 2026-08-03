@@ -25,7 +25,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-[88px] max-w-wide items-center justify-between px-5 lg:px-10">
         <a href="#top" aria-label="SPHERA" className="shrink-0">
-          <Logo className="h-12 w-auto lg:h-[3.4rem]" />
+          <Logo className="h-14 w-auto lg:h-[3.9rem]" />
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">

@@ -305,7 +305,7 @@ export const positioning = {
   },
   is: {
     label: "A SPHERA é",
-    text: "Quem entra junto com o seu time, organiza a gestão e o comercial e coloca pra funcionar no dia a dia, e fica até virar rotina. Menos relatório na gaveta, mais coisa acontecendo na sua empresa.",
+    text: "Quem entra junto e coloca a sua empresa pra funcionar. Menos relatório, mais coisa acontecendo.",
   },
 };
 
