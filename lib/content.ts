@@ -356,3 +356,34 @@ export const footer = {
   contactTitle: "Contato",
   copyright: "Todos os direitos reservados.",
 };
+
+// Pausa emocional antes do diagnóstico (Ajuste 2).
+export const pause = {
+  text: "Você construiu uma empresa para ter mais liberdade. Sem perceber, ela começou a depender de você para tudo.",
+};
+
+// Contraste relatório x rotina, dentro da seção de execução (Ajuste 5).
+export const contrast = {
+  line: "Plano bom é o que sai do papel.",
+  traditional: {
+    label: "Consultoria tradicional",
+    steps: ["Diagnóstico", "relatório", "gaveta"],
+  },
+  sphera: {
+    label: "Sphera",
+    steps: ["Diagnóstico", "organização", "execução", "rotina"],
+  },
+};
+
+// O que fica rodando na empresa (Ajuste 7) — junto aos serviços.
+export const delivery = {
+  title: "O que fica rodando na empresa.",
+  items: [
+    "Processo comercial implantado",
+    "Funil funcionando",
+    "Painel simples de indicadores",
+    "Time treinado",
+    "Rito semanal de gestão",
+  ],
+  note: "A entrega não é um documento. É uma rotina funcionando.",
+};

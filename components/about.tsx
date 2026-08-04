@@ -30,7 +30,7 @@ export function About() {
                 />
               </Reveal>
               <Reveal delay={200}>
-                <p className="mt-8 max-w-sm text-2xl font-semibold leading-snug text-fg">
+                <p className="mt-8 max-w-sm text-3xl font-bold leading-snug tracking-tight text-fg">
                   “{about.quote}”
                 </p>
               </Reveal>

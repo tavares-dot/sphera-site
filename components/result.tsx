@@ -1,55 +1,38 @@
 import { Reveal, Kicker } from "./ui";
+import { IncompleteCircle } from "./signature";
 import { result } from "@/lib/content";
 
 /**
- * Bloco "O resultado" — dá protagonismo à promessa central da marca
- * ("A empresa andando sem você."), como ponte entre a abertura e o diagnóstico.
+ * Bloco "O resultado" (Ajuste 3) — o título domina; uma única linha de apoio
+ * com o círculo incompleto; o texto explicativo fica abaixo, em corpo menor.
  */
 export function Result() {
   return (
     <section className="relative border-y border-white/10 bg-bg2">
-      <div className="mx-auto max-w-wide px-5 py-28 lg:px-10 lg:py-40">
+      <div className="mx-auto max-w-wide px-5 py-32 lg:px-10 lg:py-44">
         <Reveal>
           <Kicker>{result.eyebrow}</Kicker>
         </Reveal>
         <Reveal delay={80}>
-          <h2 className="display mt-7 max-w-[15ch] text-balance text-4xl font-extrabold leading-[1.03] tracking-tightest text-fg sm:text-6xl lg:text-8xl">
+          <h2 className="display mt-8 max-w-[14ch] text-balance text-5xl font-extrabold leading-[1.0] tracking-tightest text-fg sm:text-7xl lg:text-[7rem]">
             {result.titleLead}{" "}
             <span className="text-accent">{result.titleEmphasis}</span>
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-12 lg:gap-16">
-          <Reveal delay={140} className="lg:col-span-7">
-            <p className="max-w-2xl text-lg leading-relaxed text-fg/60">
-              {result.body}
-            </p>
-          </Reveal>
-          <Reveal delay={200} className="lg:col-span-5 lg:col-start-8">
-            <p className="border-l-2 border-accent pl-5 text-xl font-semibold leading-snug text-fg">
+        <Reveal delay={160}>
+          <div className="mt-12 flex items-center gap-5">
+            <IncompleteCircle className="h-10 w-10 shrink-0" />
+            <p className="max-w-md text-lg font-semibold leading-snug text-fg sm:text-xl">
               {result.support}
             </p>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
 
-        {/* assinatura discreta: caos -> ordem (estática) */}
-        <Reveal delay={260}>
-          <svg
-            aria-hidden
-            className="mt-14 h-6 w-44 opacity-70"
-            viewBox="0 0 300 40"
-            fill="none"
-          >
-            <path
-              d="M2,20 C10,4 22,36 33,20 C44,7 40,34 55,20 C71,9 95,31 120,20 L282,20"
-              stroke="#E27217"
-              strokeOpacity="0.7"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <circle cx="290" cy="20" r="6" fill="#E27217" />
-          </svg>
+        <Reveal delay={220}>
+          <p className="mt-10 max-w-2xl text-base leading-relaxed text-fg/55">
+            {result.body}
+          </p>
         </Reveal>
       </div>
     </section>

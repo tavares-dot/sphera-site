@@ -1,6 +1,6 @@
 import { Reveal, Parallax } from "./ui";
 import { Sphere } from "./brand";
-import { manifesto } from "@/lib/content";
+import { manifesto, contrast } from "@/lib/content";
 
 export function Statement() {
   return (
@@ -25,6 +25,33 @@ export function Statement() {
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-fg/55">
               {manifesto.body}
             </p>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <div className="mt-12 max-w-xl border-t border-white/10 pt-8">
+              <p className="text-lg font-semibold text-fg">{contrast.line}</p>
+              <div className="mt-6 space-y-5">
+                <div>
+                  <p className="kicker text-fg/40">{contrast.traditional.label}</p>
+                  <p className="mt-2 text-[15px] text-fg/45">
+                    {contrast.traditional.steps.join("  →  ")}{" "}
+                    <span aria-hidden className="ml-1 text-fg/30">
+                      ✕
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <p className="kicker text-accent">{contrast.sphera.label}</p>
+                  <p className="mt-2 text-[15px] text-fg/80">
+                    {contrast.sphera.steps.join("  →  ")}
+                    <span
+                      aria-hidden
+                      className="ml-2 inline-block h-2 w-2 rounded-full bg-accent align-middle"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </div>
