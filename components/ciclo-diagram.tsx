@@ -64,7 +64,7 @@ export function CicloDiagram({ className = "" }: { className?: string }) {
               cx={p.dx}
               cy={p.dy}
               r={start ? 9 : 7}
-              fill={start ? "#E27217" : "#F4F3F0"}
+              fill={start ? "#E27217" : "#181614"}
             />
             <text
               x={p.lx}
@@ -81,7 +81,7 @@ export function CicloDiagram({ className = "" }: { className?: string }) {
               x={p.lx}
               y={p.ly + 25}
               textAnchor={p.anchor}
-              fill="#F4F3F0"
+              fill="#181614"
               fontSize="21"
               fontWeight="800"
               style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
@@ -92,7 +92,7 @@ export function CicloDiagram({ className = "" }: { className?: string }) {
               x={p.lx}
               y={p.ly + 46}
               textAnchor={p.anchor}
-              fill="#F4F3F0"
+              fill="#181614"
               fillOpacity="0.5"
               fontSize="15"
               style={{ fontFamily: "var(--font-body)" }}

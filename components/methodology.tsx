@@ -28,7 +28,9 @@ export function Methodology() {
 
         <Reveal delay={220}>
           <div className="mt-10 hidden lg:mt-14 lg:block">
-            <CicloDiagram className="mx-auto h-auto w-full max-w-2xl" />
+            <div className="mx-auto max-w-3xl rounded-3xl bg-[#F4F3F0] px-6 py-10">
+              <CicloDiagram className="mx-auto h-auto w-full max-w-2xl" />
+            </div>
           </div>
         </Reveal>
 
