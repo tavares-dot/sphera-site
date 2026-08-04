@@ -1,5 +1,6 @@
 import { Reveal, SectionMark } from "./ui";
 import { LogoInline } from "./brand";
+import { CicloDiagram } from "./ciclo-diagram";
 import { methodology } from "@/lib/content";
 
 export function Methodology() {
@@ -26,35 +27,8 @@ export function Methodology() {
         </div>
 
         <Reveal delay={220}>
-          <div className="mt-10 max-w-xl lg:mt-12">
-            <svg
-              aria-hidden
-              viewBox="0 0 620 72"
-              fill="none"
-              className="h-auto w-full"
-            >
-              <path
-                d="M14,26 C120,20 240,34 340,25 C430,18 520,30 606,25"
-                stroke="#E27217"
-                strokeOpacity="0.5"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M606,25 C640,42 620,66 520,66 L96,66 C24,66 6,50 14,30"
-                stroke="#E27217"
-                strokeOpacity="0.3"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeDasharray="2 7"
-              />
-              <circle cx="14" cy="26" r="6" fill="#E27217" />
-              <circle cx="132" cy="24" r="4" fill="#E27217" fillOpacity="0.85" />
-              <circle cx="250" cy="30" r="4" fill="#E27217" fillOpacity="0.85" />
-              <circle cx="368" cy="24" r="4" fill="#E27217" fillOpacity="0.85" />
-              <circle cx="486" cy="26" r="4" fill="#E27217" fillOpacity="0.85" />
-              <circle cx="606" cy="25" r="5" fill="#E27217" />
-            </svg>
+          <div className="mt-10 hidden lg:mt-14 lg:block">
+            <CicloDiagram className="mx-auto h-auto w-full max-w-2xl" />
           </div>
         </Reveal>
 

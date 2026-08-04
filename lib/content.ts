@@ -132,6 +132,7 @@ export const methodology = {
     {
       n: "01",
       key: "ENTENDER",
+      word: "escutar",
       title: "Entender como a empresa funciona hoje",
       description:
         "A gente mergulha na rotina real do negócio: como se vende, quem faz o quê e onde as coisas emperram.",
@@ -141,6 +142,7 @@ export const methodology = {
     {
       n: "02",
       key: "PLANEJAR",
+      word: "desenhar",
       title: "Desenhar um jeito melhor de trabalhar",
       description:
         "Definimos, junto com você, como a empresa deveria funcionar para o tamanho que ela tem hoje e para onde quer chegar.",
@@ -150,6 +152,7 @@ export const methodology = {
     {
       n: "03",
       key: "ORGANIZAR",
+      word: "arrumar",
       title: "Colocar cada área no lugar",
       description:
         "Marketing, vendas e entrega deixam de trabalhar soltos e passam a seguir um caminho combinado.",
@@ -159,6 +162,7 @@ export const methodology = {
     {
       n: "04",
       key: "EXECUTAR",
+      word: "fazer",
       title: "Colocar pra funcionar",
       description:
         "As combinações saem do papel e viram rotina do dia a dia, com ferramentas simples, do jeito que a sua equipe consegue usar.",
@@ -168,6 +172,7 @@ export const methodology = {
     {
       n: "05",
       key: "ACOMPANHAR",
+      word: "medir",
       title: "Acompanhar de perto",
       description:
         "Poucos números, só os que importam, para você saber o que está indo bem e o que precisa de atenção.",
@@ -177,6 +182,7 @@ export const methodology = {
     {
       n: "06",
       key: "CRESCER",
+      word: "evoluir",
       title: "Crescer com melhoria contínua",
       description:
         "Com a casa organizada, pequenos ajustes constantes sustentam o crescimento sem trazer a bagunça de volta.",
