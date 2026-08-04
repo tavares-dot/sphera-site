@@ -23,7 +23,7 @@ const POS = [
 export function CicloDiagram({ className = "" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 780 680"
+      viewBox="50 32 680 636"
       fill="none"
       role="img"
       aria-label="Ciclo Sphera: entender, planejar, organizar, executar, acompanhar e crescer, em um ciclo contínuo."
